@@ -12,7 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/eakmotion/portfolio.git"
   },
-  "keywords": ["portfolio", "nextjs", "react"],
+  "keywords": [
+    "portfolio",
+    "nextjs",
+    "react"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -20,15 +24,18 @@
   },
   "homepage": "https://eakmotion.github.io/portfolio",
   "dependencies": {
+    "lucide-react": "latest",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "lucide-react": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.9",
     "typescript": "latest"
   }
 }
