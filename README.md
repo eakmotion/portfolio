@@ -44,6 +44,18 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## Deployment
+
+The portfolio is configured to deploy to GitHub Pages. To deploy:
+
+1. Update the `homepage` field in `package.json` with your GitHub Pages URL
+2. Run the deployment command:
+   ```bash
+   npm run deploy
+   ```
+
+This will build the application and deploy it to the `gh-pages` branch of your repository.
+
 ## Project Structure
 
 ```
@@ -60,6 +72,7 @@ src/
 - `npm test` - Launches the test runner
 - `npm run build` - Builds the app for production
 - `npm run eject` - Ejects from Create React App
+- `npm run deploy` - Deploys the app to GitHub Pages
 
 ## Contributing
 
