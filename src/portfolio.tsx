@@ -791,13 +791,13 @@ const Portfolio = () => {
                 </h3>
                 
                 <p className="text-gray-300 mb-6">
-                  Beyond technical development, I have mentored budding engineers through my role at Lighthouse Labs. 
-                  I helped students navigate the full-stack development lifecycle—from front-end design to back-end logic—instilling 
+                  Beyond technical development, I have mentored budding engineers through my roles at Lighthouse Labs and as a volunteer mentor with ADPList. 
+                  I help students and professionals navigate the full-stack development lifecycle—from front-end design to back-end logic—instilling 
                   best practices in UX, TDD, and agile methodologies.
                 </p>
                 
-                <div className="mb-4">
-                  <h5 className="text-purple-400 font-semibold mb-3">As a mentor, I provided:</h5>
+                <div className="mb-6">
+                  <h5 className="text-purple-400 font-semibold mb-3">Lighthouse Labs:</h5>
                   <ul className="space-y-2">
                     <li className="flex items-start text-gray-300">
                       <span className="text-purple-500 mr-2 mt-1">•</span>
@@ -812,6 +812,13 @@ const Portfolio = () => {
                       <span>Support for students to build a strong foundation in both front-end and back-end development.</span>
                     </li>
                   </ul>
+                </div>
+
+                <div className="mb-4">
+                  <h5 className="text-purple-400 font-semibold mb-3">ADPList Volunteer Mentor:</h5>
+                  <p className="text-gray-300 mb-4">
+                    I'm proud to volunteer as a mentor with ADPList, a non-profit organization dedicated to connecting mentors and mentees across the globe. Through this platform, I provide one-on-one sessions, career advice, and technical guidance to help aspiring developers and tech professionals advance their skills, navigate industry challenges, and grow their confidence.
+                  </p>
                 </div>
               </div>
             </div>
@@ -1055,18 +1062,25 @@ const Portfolio = () => {
                 <div className="mb-8 animate-on-scroll" style={{animationDelay: '0.2s'}}>
                   <h4 className="text-purple-400 font-semibold mb-4">Social Media</h4>
                   <div className="space-y-3">
-                    <a href="#" className="flex items-center text-gray-300 hover:text-purple-400 transition-all duration-300 group">
+                    <a href="https://www.linkedin.com/in/eakkapan" target="_blank" className="flex items-center text-gray-300 hover:text-purple-400 transition-all duration-300 group">
                       <span className="mr-3 p-2 bg-gray-800 rounded-full group-hover:bg-purple-500/20 transition-colors duration-300">
                         <Linkedin size={16} className="group-hover:scale-110 transition-transform duration-300" />
                       </span>
                       <span>LinkedIn</span>
                       <span className="ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">→</span>
                     </a>
-                    <a href="#" className="flex items-center text-gray-300 hover:text-purple-400 transition-all duration-300 group">
+                    <a href="https://github.com/eakmotion" target="_blank" className="flex items-center text-gray-300 hover:text-purple-400 transition-all duration-300 group">
                       <span className="mr-3 p-2 bg-gray-800 rounded-full group-hover:bg-purple-500/20 transition-colors duration-300">
                         <Github size={16} className="group-hover:scale-110 transition-transform duration-300" />
                       </span>
                       <span>GitHub</span>
+                      <span className="ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">→</span>
+                    </a>
+                    <a href="https://adplist.org/mentors/eak-zangkaew" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-300 hover:text-purple-400 transition-all duration-300 group">
+                      <span className="mr-3 p-2 bg-gray-800 rounded-full group-hover:bg-purple-500/20 transition-colors duration-300">
+                        <ExternalLink size={16} className="group-hover:scale-110 transition-transform duration-300" />
+                      </span>
+                      <span>ADPList</span>
                       <span className="ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">→</span>
                     </a>
                   </div>
