@@ -12,6 +12,7 @@ import screenshotMogoTrade from './assets/images/projects/screenshot-mogo-trade.
 import screenshotMoka from './assets/images/projects/screenshot-moka.png';
 import screenshotMogoMoney from './assets/images/projects/screenshot-mogo-money.png';
 import screenshotSblive from './assets/images/projects/screenshot-sblive.png';
+import screenshotFlashfunders from './assets/images/projects/screenshot-flashfunders.png'
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -369,7 +370,7 @@ const Portfolio = () => {
               }}>
                 <p className="text-gray-400 mb-8">
                   Explore my projects and learn more about my expertise in creating 
-                  efficient and secure solutions.
+                  efficient and secure solutions across financial services, equity crowdfunding, and sports tech industries.
                 </p>
               </div>
               
@@ -600,7 +601,7 @@ const Portfolio = () => {
                 {[
                   { number: "15+", label: "Years Experience" },
                   { number: "20+", label: "Projects Completed" },
-                  { number: "3", label: "Industries" },
+                  { number: "4", label: "Industries" },
                   { number: "5+", label: "Tech Specialties" }
                 ].map((stat, index) => (
                   <div key={index} className="text-center p-4 relative">
@@ -700,15 +701,78 @@ const Portfolio = () => {
               
               <div className="p-8">
                 <h3 className="text-2xl font-bold mb-3 text-purple-300">
-                  SBLive Sports & FlashFunders
+                  SBLive Sports
                 </h3>
                 <h4 className="text-xl text-gray-300 mb-4">Senior Software Engineer</h4>
                 
                 <p className="text-gray-300 mb-6">
-                  As a Senior Software Engineer, I built scalable systems and designed microservices architectures to support millions of users. 
+                  As a Senior Software Engineer at SBLive Sports, I built scalable systems and designed microservices architectures to support millions of users. 
                   My contributions included migrating legacy systems, optimizing backend services, and ensuring seamless integration of regulatory 
                   and compliance requirements.
                 </p>
+
+                <div className="mb-6">
+                  <h5 className="text-purple-400 font-semibold mb-3">Key Contributions:</h5>
+                  <ul className="space-y-2">
+                    <li className="flex items-start text-gray-300">
+                      <span className="text-purple-500 mr-2 mt-1">•</span>
+                      <span><strong>Scalable Architecture:</strong> Designed and implemented microservices in Go and Ruby, enabling the platform to handle high traffic and large spikes during major sports events.</span>
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                      <span className="text-purple-500 mr-2 mt-1">•</span>
+                      <span><strong>Legacy Migration:</strong> Transitioned critical features from legacy PHP services to modern Go-based solutions, improving maintainability and performance.</span>
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                      <span className="text-purple-500 mr-2 mt-1">•</span>
+                      <span><strong>Performance Optimization:</strong> Implemented caching, load balancing, and AWS-based tooling (EC2, RDS, DynamoDB) to reduce costs and deliver a consistently low-latency user experience.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            {/* FlashFunders Experience */}
+            <div className="animate-on-scroll bg-gray-800 rounded-xl overflow-hidden shadow-xl relative">
+              <div className="h-2 bg-gradient-to-r from-teal-600 to-cyan-600 relative overflow-hidden">
+                <div className="absolute inset-0 bg-white opacity-30" style={{
+                  transform: 'translateX(-100%)',
+                  animation: 'shine 3s infinite 1s'
+                }}></div>
+              </div>
+              
+              <div className="p-8">
+                <h3 className="text-2xl font-bold mb-3 text-purple-300">
+                  FlashFunders
+                </h3>
+                <h4 className="text-xl text-gray-300 mb-4">Software Engineer</h4>
+                
+                <p className="text-gray-300 mb-6">
+                  At FlashFunders, I designed and developed user-friendly investment workflows for an equity crowdfunding platform 
+                  that simplifies how startups raise capital and democratizes investor access. I worked with Ruby on Rails and React, 
+                  ensuring regulatory compliance, secure transactions, and seamless integrations with third-party services like DocuSign.
+                </p>
+                
+                <div className="mb-6">
+                  <h5 className="text-purple-400 font-semibold mb-3">Key Contributions:</h5>
+                  <ul className="space-y-2">
+                    <li className="flex items-start text-gray-300">
+                      <span className="text-purple-500 mr-2 mt-1">•</span>
+                      <span><strong>Compliance & Security:</strong> Built secure investor flows that satisfied FINRA/SEC regulations and AML/KYC checks.</span>
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                      <span className="text-purple-500 mr-2 mt-1">•</span>
+                      <span><strong>Microservices & Integrations:</strong> Utilized Ruby on Rails and Python microservices for background processing; integrated external APIs (e.g., FundAmerica) for automated escrow management.</span>
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                      <span className="text-purple-500 mr-2 mt-1">•</span>
+                      <span><strong>Scalable Architecture:</strong> Migrated legacy components to a modern stack, reducing technical debt and boosting performance.</span>
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                      <span className="text-purple-500 mr-2 mt-1">•</span>
+                      <span><strong>Test-Driven Development:</strong> Employed RSpec, Capybara, and CI/CD pipelines to maintain high code quality and reliability.</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             
@@ -838,6 +902,20 @@ const Portfolio = () => {
                   "Collaborated with front-end developers to ensure seamless integration of backend services with the user interface."
                 ],
                 color: "from-green-600 to-teal-600"
+              },
+              {
+                title: "FlashFunders",
+                description: "An equity crowdfunding platform that simplifies how startups raise capital and democratizes investor access.",
+                tech: "Ruby on Rails, React, Python",
+                website: "flashfunders.com",
+                screenshot: screenshotFlashfunders,
+                achievements: [
+                  "Compliance & Security: Built secure investor flows that satisfied FINRA/SEC regulations and AML/KYC checks.",
+                  "Microservices & Integrations: Utilized Ruby on Rails and Python microservices for background processing; integrated external APIs (e.g., FundAmerica) for automated escrow management.",
+                  "Scalable Architecture: Migrated legacy components to a modern stack, reducing technical debt and boosting performance.",
+                  "Test-Driven Development: Employed RSpec, Capybara, and CI/CD pipelines to maintain high code quality and reliability."
+                ],
+                color: "from-teal-600 to-cyan-600"
               }
             ].map((project, index) => (
               <div
