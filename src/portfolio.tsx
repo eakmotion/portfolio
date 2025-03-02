@@ -7,6 +7,11 @@ import logoSblive from './assets/images/logos/logo-sblive.svg';
 import logoFlash from './assets/images/logos/logo-flash.jpg';
 import logo500 from './assets/images/logos/logo-500.jpg';
 import logoOozou from './assets/images/logos/logo-oozou.png';
+// Project screenshots
+import screenshotMogoTrade from './assets/images/projects/screenshot-mogo-trade.png';
+import screenshotMoka from './assets/images/projects/screenshot-moka.png';
+import screenshotMogoMoney from './assets/images/projects/screenshot-mogo-money.png';
+import screenshotSblive from './assets/images/projects/screenshot-sblive.png';
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -645,6 +650,7 @@ const Portfolio = () => {
                 description: "Financial trading platform that allows users to trade stocks and other securities with ease.",
                 tech: "Node.js, TypeScript",
                 website: "www.mogo.ca",
+                screenshot: screenshotMogoTrade,
                 achievements: [
                   "Enhanced the performance of data retrieval processes by optimizing database queries, resulting in a 30% reduction in response times.",
                   "Implemented robust security measures to protect sensitive user data and comply with financial regulations.",
@@ -657,6 +663,7 @@ const Portfolio = () => {
                 description: "Financial app that helps users automate their savings and investments.",
                 tech: "Node.js, TypeScript",
                 website: "www.moka.ai",
+                screenshot: screenshotMoka,
                 achievements: [
                   "Developed a feature to automate round-up transactions, allowing users to save spare change effortlessly.",
                   "Implemented caching strategies that improved the app's performance and reduced server load by 25%.",
@@ -669,6 +676,7 @@ const Portfolio = () => {
                 description: "Personal loans platform with an easy-to-use online interface.",
                 tech: "Ruby, Ruby on Rails",
                 website: "mogo.ca/personal-loans-canada",
+                screenshot: screenshotMogoMoney,
                 achievements: [
                   "Developed and optimized algorithms for credit scoring and risk assessment, reducing loan approval times by 40%.",
                   "Ensured the system's compliance with financial regulations and industry standards through rigorous testing and validation processes.",
@@ -681,6 +689,7 @@ const Portfolio = () => {
                 description: "Platform providing real-time scores, news, and updates for high school sports.",
                 tech: "Ruby, Ruby on Rails",
                 website: "scorebooklive.com",
+                screenshot: screenshotSblive,
                 achievements: [
                   "Implemented real-time data streaming features to provide up-to-the-minute score updates and sports news.",
                   "Optimized data storage and retrieval processes, enhancing the platform's ability to handle high traffic volumes during peak times.",
@@ -754,9 +763,9 @@ const Portfolio = () => {
                     <div className="md:w-1/2">
                       <div className="bg-gray-900 rounded-lg p-4 h-full flex items-center justify-center overflow-hidden">
                         <img 
-                          src="/api/placeholder/500/300" 
+                          src={project.screenshot}
                           alt={`${project.title} screenshot`} 
-                          className="rounded-lg shadow-lg transition-all duration-500"
+                          className="rounded-lg shadow-lg transition-all duration-500 w-full h-full object-cover"
                           style={{
                             filter: 'brightness(0.8)',
                             transform: 'scale(1)',
