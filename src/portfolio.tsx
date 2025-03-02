@@ -88,7 +88,7 @@ const Portfolio = () => {
   const customStyles = {
     '@keyframes float': {
       '0%': { transform: 'translateY(0px)' },
-      '50%': { transform: 'translateY(-20px)' },
+      '50%': { transform: 'translateY(-10px)' },
       '100%': { transform: 'translateY(0px)' }
     },
     '@keyframes pulse': {
@@ -97,16 +97,32 @@ const Portfolio = () => {
       '100%': { opacity: 0.6 }
     },
     '@keyframes slideInLeft': {
-      '0%': { transform: 'translateX(-100px)', opacity: 0 },
+      '0%': { transform: 'translateX(-50px)', opacity: 0 },
       '100%': { transform: 'translateX(0)', opacity: 1 }
     },
     '@keyframes slideInRight': {
-      '0%': { transform: 'translateX(100px)', opacity: 0 },
+      '0%': { transform: 'translateX(50px)', opacity: 0 },
       '100%': { transform: 'translateX(0)', opacity: 1 }
     },
     '@keyframes fadeInUp': {
       '0%': { transform: 'translateY(40px)', opacity: 0 },
       '100%': { transform: 'translateY(0)', opacity: 1 }
+    },
+    '@keyframes fadeOut': {
+      '0%': { opacity: 1 },
+      '100%': { opacity: 0, visibility: 'hidden' }
+    },
+    '@keyframes slideInDown': {
+      '0%': { transform: 'translateY(-50px)', opacity: 0 },
+      '100%': { transform: 'translateY(0)', opacity: 1 }
+    },
+    '@keyframes slideInUp': {
+      '0%': { transform: 'translateY(50px)', opacity: 0 },
+      '100%': { transform: 'translateY(0)', opacity: 1 }
+    },
+    '@keyframes spin': {
+      '0%': { transform: 'rotate(0deg)' },
+      '100%': { transform: 'rotate(360deg)' }
     },
     '.animate-in-view': {
       opacity: 1,
@@ -147,6 +163,21 @@ const Portfolio = () => {
           
           @keyframes fadeInUp {
             0% { transform: translateY(30px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+          }
+          
+          @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; visibility: hidden; }
+          }
+          
+          @keyframes slideInDown {
+            0% { transform: translateY(-50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+          }
+          
+          @keyframes slideInUp {
+            0% { transform: translateY(50px); opacity: 0; }
             100% { transform: translateY(0); opacity: 1; }
           }
           
@@ -601,7 +632,7 @@ const Portfolio = () => {
                 {[
                   { number: "15+", label: "Years Experience" },
                   { number: "20+", label: "Projects Completed" },
-                  { number: "4", label: "Industries" },
+                  { number: "4+", label: "Industries" },
                   { number: "5+", label: "Tech Specialties" }
                 ].map((stat, index) => (
                   <div key={index} className="text-center p-4 relative">
@@ -819,6 +850,60 @@ const Portfolio = () => {
                   <p className="text-gray-300 mb-4">
                     I'm proud to volunteer as a mentor with ADPList, a non-profit organization dedicated to connecting mentors and mentees across the globe. Through this platform, I provide one-on-one sessions, career advice, and technical guidance to help aspiring developers and tech professionals advance their skills, navigate industry challenges, and grow their confidence.
                   </p>
+                </div>
+
+                {/* ADPList Reviews Widget */}
+                <div className="mt-8 animate-on-scroll">
+                  <h5 className="text-purple-400 font-semibold mb-4 relative inline-block">
+                    <a href='https://adplist.org/mentors/eak-zangkaew' target='_blank'>What My Mentees Say</a>
+                    <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-green-500 to-teal-500" 
+                      style={{
+                        transform: 'scaleX(0)',
+                        transformOrigin: 'left',
+                        animation: 'slideInRight 0.8s 0.3s forwards'
+                      }}></span>
+                  </h5>
+                  
+                  <div className="relative overflow-hidden rounded-xl bg-gray-900/50 border border-purple-500/10 shadow-lg transform transition-all duration-500 hover:shadow-purple-500/20 hover:border-purple-500/30">
+                    {/* Animated corner accents */}
+                    <div className="absolute top-0 left-0 w-16 h-16 overflow-hidden">
+                      <div className="absolute top-0 left-0 w-16 h-1 bg-gradient-to-r from-green-500 to-transparent" style={{animation: 'slideInRight 1.5s ease-out forwards'}}></div>
+                      <div className="absolute top-0 left-0 h-16 w-1 bg-gradient-to-b from-green-500 to-transparent" style={{animation: 'slideInDown 1.5s ease-out forwards'}}></div>
+                    </div>
+                    <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden">
+                      <div className="absolute top-0 right-0 w-16 h-1 bg-gradient-to-l from-green-500 to-transparent" style={{animation: 'slideInLeft 1.5s ease-out forwards'}}></div>
+                      <div className="absolute top-0 right-0 h-16 w-1 bg-gradient-to-b from-green-500 to-transparent" style={{animation: 'slideInDown 1.5s ease-out forwards'}}></div>
+                    </div>
+                    <div className="absolute bottom-0 left-0 w-16 h-16 overflow-hidden">
+                      <div className="absolute bottom-0 left-0 w-16 h-1 bg-gradient-to-r from-green-500 to-transparent" style={{animation: 'slideInRight 1.5s ease-out forwards'}}></div>
+                      <div className="absolute bottom-0 left-0 h-16 w-1 bg-gradient-to-t from-green-500 to-transparent" style={{animation: 'slideInUp 1.5s ease-out forwards'}}></div>
+                    </div>
+                    <div className="absolute bottom-0 right-0 w-16 h-16 overflow-hidden">
+                      <div className="absolute bottom-0 right-0 w-16 h-1 bg-gradient-to-l from-green-500 to-transparent" style={{animation: 'slideInLeft 1.5s ease-out forwards'}}></div>
+                      <div className="absolute bottom-0 right-0 h-16 w-1 bg-gradient-to-t from-green-500 to-transparent" style={{animation: 'slideInUp 1.5s ease-out forwards'}}></div>
+                    </div>
+                    
+                    {/* Widget container with responsive height */}
+                    <div className="p-4 md:p-6 relative z-10">
+                      <div className="h-[400px] sm:h-[450px] md:h-[496px] w-full max-w-[650px] mx-auto rounded-lg overflow-hidden shadow-md transition-transform duration-500 hover:translate-y-[-5px]">
+                        <iframe 
+                          src="https://adplist.org/widgets/reviews?src=eak-zangkaew" 
+                          title="Mentee Reviews" 
+                          width="100%" 
+                          height="100%" 
+                          loading="lazy" 
+                          className="border-0 bg-white rounded-lg"
+                        ></iframe>
+                      </div>
+                      
+                      {/* Subtle loading animation */}
+                      <div className="absolute inset-0 flex items-center justify-center bg-gray-900/80 rounded-xl z-20 opacity-0 animate-pulse" style={{
+                        animation: 'fadeOut 1.5s forwards'
+                      }}>
+                        <div className="w-16 h-16 border-4 border-t-purple-500 border-r-transparent border-b-green-500 border-l-transparent rounded-full animate-spin"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
