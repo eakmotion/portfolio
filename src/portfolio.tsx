@@ -1,6 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Globe, Code, Server, Shield, ExternalLink, Mail, Linkedin, Menu, X, Github } from 'lucide-react';
 import profilePhoto from './assets/images/profile-photo.png';
+import logoMogo from './assets/images/logos/logo-mogo.png';
+import logoMoka from './assets/images/logos/logo-moka.png';
+import logoSblive from './assets/images/logos/logo-sblive.svg';
+import logoFlash from './assets/images/logos/logo-flash.jpg';
+import logo500 from './assets/images/logos/logo-500.jpg';
+import logoOozou from './assets/images/logos/logo-oozou.png';
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -449,15 +455,15 @@ const Portfolio = () => {
               <div className="max-w-5xl mx-auto">
                 <div className="flex flex-wrap md:flex-nowrap items-center justify-center gap-4 md:gap-16">
                   {[
-                    { name: 'MOGO', width: 120 },
-                    { name: 'moka', width: 100 },
-                    { name: 'SBLive', width: 130 },
-                    { name: 'FLASH', width: 110 },
-                    { name: '500', width: 100 },
-                    { name: 'oozou', width: 120 }
+                    { name: 'MOGO', image: logoMogo, width: 120 },
+                    { name: 'Moka', image: logoMoka, width: 100 },
+                    { name: 'SBLive', image: logoSblive, width: 130 },
+                    { name: 'FLASH', image: logoFlash, width: 110 },
+                    { name: '500', image: logo500, width: 100 },
+                    { name: 'Oozou', image: logoOozou, width: 120 }
                   ].map((logo, index) => (
                     <div 
-                      key={index} 
+                      key={logo.name} 
                       className="logo-container transition-all duration-500"
                       style={{
                         opacity: 0,
@@ -467,9 +473,12 @@ const Portfolio = () => {
                       <div className="group relative">
                         {/* Logo image */}
                         <img 
-                          src={`/api/placeholder/${logo.width}/40`}
+                          src={logo.image}
                           alt={`${logo.name} logo`}
                           className="h-12 object-contain transition-all duration-500 group-hover:opacity-100 opacity-70"
+                          style={{
+                            maxWidth: logo.width,
+                          }}
                         />
                         
                         {/* Hover effect - subtle indicator line */}
