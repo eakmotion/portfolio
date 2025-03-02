@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Globe, Code, Server, Shield, ExternalLink, Mail, Linkedin, Menu, X, Github } from 'lucide-react';
+import profilePhoto from './assets/images/profile-photo.png';
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -420,7 +421,7 @@ const Portfolio = () => {
                 
                 <div className="w-64 h-64 rounded-full border-4 border-purple-500 overflow-hidden relative z-10 shadow-lg shadow-purple-500/30">
                   <img 
-                    src="/api/placeholder/300/300" 
+                    src={profilePhoto}
                     alt="Eak Zangkaew" 
                     className="w-full h-full object-cover"
                   />
