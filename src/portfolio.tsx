@@ -1055,123 +1055,112 @@ const Portfolio = () => {
             <div className="absolute inset-0 p-0.5 rounded-xl bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-600 opacity-30" 
                  style={{animation: 'pulse 3s infinite'}}></div>
             
-            <div className="relative flex flex-col md:flex-row">
-              <div className="md:w-2/5 p-8 bg-gradient-to-br from-purple-900/50 to-indigo-900/30 animate-on-scroll">
-                <h3 className="text-2xl font-bold mb-6 text-white">Let's connect and create something amazing together!</h3>
-                
-                <div className="mb-8 animate-on-scroll" style={{animationDelay: '0.2s'}}>
-                  <h4 className="text-purple-400 font-semibold mb-4">Social Media</h4>
-                  <div className="space-y-3">
-                    <a href="https://www.linkedin.com/in/eakkapan" target="_blank" className="flex items-center text-gray-300 hover:text-purple-400 transition-all duration-300 group">
-                      <span className="mr-3 p-2 bg-gray-800 rounded-full group-hover:bg-purple-500/20 transition-colors duration-300">
-                        <Linkedin size={16} className="group-hover:scale-110 transition-transform duration-300" />
-                      </span>
-                      <span>LinkedIn</span>
-                      <span className="ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">→</span>
-                    </a>
-                    <a href="https://github.com/eakmotion" target="_blank" className="flex items-center text-gray-300 hover:text-purple-400 transition-all duration-300 group">
-                      <span className="mr-3 p-2 bg-gray-800 rounded-full group-hover:bg-purple-500/20 transition-colors duration-300">
-                        <Github size={16} className="group-hover:scale-110 transition-transform duration-300" />
-                      </span>
-                      <span>GitHub</span>
-                      <span className="ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">→</span>
-                    </a>
-                    <a href="https://adplist.org/mentors/eak-zangkaew" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-300 hover:text-purple-400 transition-all duration-300 group">
-                      <span className="mr-3 p-2 bg-gray-800 rounded-full group-hover:bg-purple-500/20 transition-colors duration-300">
-                        <ExternalLink size={16} className="group-hover:scale-110 transition-transform duration-300" />
-                      </span>
-                      <span>ADPList</span>
-                      <span className="ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">→</span>
-                    </a>
-                  </div>
+            <div className="relative p-8 md:p-12">
+              <div className="max-w-3xl mx-auto">
+                <div className="text-center mb-12 animate-on-scroll">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-6 text-white">Let's connect and create something amazing together!</h3>
+                  <p className="text-gray-300">Reach out through any of these channels and I'll get back to you promptly.</p>
                 </div>
                 
-                <div className="animate-on-scroll" style={{animationDelay: '0.4s'}}>
-                  <h4 className="text-purple-400 font-semibold mb-4">Get in touch</h4>
-                  <a 
-                    href="mailto:eakpun@gmail.com" 
-                    className="flex items-center text-gray-300 hover:text-purple-400 transition-all duration-300 group"
-                  >
-                    <span className="mr-3 p-2 bg-gray-800 rounded-full group-hover:bg-purple-500/20 transition-colors duration-300">
-                      <Mail size={16} className="group-hover:scale-110 transition-transform duration-300" />
-                    </span>
-                    <span>eakpun@gmail.com</span>
-                    <span className="ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">→</span>
-                  </a>
-                </div>
-              </div>
-              
-              <div className="md:w-3/5 p-8 animate-on-scroll">
-                <form>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                    <div className="animate-on-scroll" style={{animationDelay: '0.2s'}}>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-2">Name</label>
-                      <div className="relative">
-                        <input 
-                          type="text" 
-                          id="name" 
-                          className="w-full bg-gray-800 border border-gray-700 rounded-md py-3 px-4 text-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all duration-300"
-                          placeholder="Your name"
-                        />
-                        <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-500 peer-focus:w-full"></div>
-                      </div>
-                    </div>
-                    <div className="animate-on-scroll" style={{animationDelay: '0.3s'}}>
-                      <label htmlFor="company" className="block text-sm font-medium text-gray-400 mb-2">Company</label>
-                      <div className="relative">
-                        <input 
-                          type="text" 
-                          id="company" 
-                          className="w-full bg-gray-800 border border-gray-700 rounded-md py-3 px-4 text-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all duration-300"
-                          placeholder="Your company"
-                        />
-                        <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-500 peer-focus:w-full"></div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="mb-6 animate-on-scroll" style={{animationDelay: '0.4s'}}>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-400 mb-2">Email</label>
-                    <div className="relative">
-                      <input 
-                        type="email" 
-                        id="email" 
-                        className="w-full bg-gray-800 border border-gray-700 rounded-md py-3 px-4 text-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all duration-300"
-                        placeholder="Your email"
-                      />
-                      <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-500 peer-focus:w-full"></div>
-                    </div>
-                  </div>
-                  
-                  <div className="mb-6 animate-on-scroll" style={{animationDelay: '0.5s'}}>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-400 mb-2">Message</label>
-                    <div className="relative">
-                      <textarea 
-                        id="message" 
-                        rows={5}
-                        className="w-full bg-gray-800 border border-gray-700 rounded-md py-3 px-4 text-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all duration-300"
-                        placeholder="Your message"
-                      ></textarea>
-                      <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-500 peer-focus:w-full"></div>
-                    </div>
-                  </div>
-                  
-                  <div className="animate-on-scroll" style={{animationDelay: '0.6s'}}>
-                    <button 
-                      type="submit"
-                      className="relative w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-6 rounded-md font-medium transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 overflow-hidden group"
-                    >
-                      <span className="relative z-10 flex items-center justify-center">
-                        <span>Send Message</span>
-                        <ExternalLink size={16} className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  {/* Social Media Links */}
+                  <div className="bg-gray-800/50 p-6 rounded-xl border border-purple-500/10 hover:border-purple-500/30 transition-all duration-300 shadow-lg transform hover:-translate-y-1 hover:shadow-purple-500/20 animate-on-scroll" style={{animationDelay: '0.2s'}}>
+                    <h4 className="text-purple-400 font-semibold mb-6 flex items-center">
+                      <span className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center mr-3">
+                        <Globe size={18} className="text-purple-400" />
                       </span>
+                      Social Media
+                    </h4>
+                    <div className="space-y-5">
+                      <a href="https://www.linkedin.com/in/eakkapan" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-300 hover:text-purple-400 transition-all duration-300 group p-3 rounded-lg hover:bg-purple-500/10">
+                        <span className="mr-4 p-2 bg-gray-800 rounded-full group-hover:bg-purple-500/20 transition-colors duration-300">
+                          <Linkedin size={20} className="group-hover:scale-110 transition-transform duration-300" />
+                        </span>
+                        <div className="flex flex-col">
+                          <span className="font-medium">LinkedIn</span>
+                          <span className="text-sm text-gray-400 group-hover:text-purple-300">Connect professionally</span>
+                        </div>
+                        <span className="ml-auto opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">
+                          <ExternalLink size={16} />
+                        </span>
+                      </a>
                       
-                      {/* Button shine effect */}
-                      <span className="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                      <span className="absolute inset-0 w-full h-full bg-white/20 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
-                    </button>
+                      <a href="https://github.com/eakmotion" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-300 hover:text-purple-400 transition-all duration-300 group p-3 rounded-lg hover:bg-purple-500/10">
+                        <span className="mr-4 p-2 bg-gray-800 rounded-full group-hover:bg-purple-500/20 transition-colors duration-300">
+                          <Github size={20} className="group-hover:scale-110 transition-transform duration-300" />
+                        </span>
+                        <div className="flex flex-col">
+                          <span className="font-medium">GitHub</span>
+                          <span className="text-sm text-gray-400 group-hover:text-purple-300">Explore my code</span>
+                        </div>
+                        <span className="ml-auto opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">
+                          <ExternalLink size={16} />
+                        </span>
+                      </a>
+                      
+                      <a href="https://adplist.org/mentors/eak-zangkaew" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-300 hover:text-purple-400 transition-all duration-300 group p-3 rounded-lg hover:bg-purple-500/10">
+                        <span className="mr-4 p-2 bg-gray-800 rounded-full group-hover:bg-purple-500/20 transition-colors duration-300">
+                          <ExternalLink size={20} className="group-hover:scale-110 transition-transform duration-300" />
+                        </span>
+                        <div className="flex flex-col">
+                          <span className="font-medium">ADPList</span>
+                          <span className="text-sm text-gray-400 group-hover:text-purple-300">Schedule mentorship</span>
+                        </div>
+                        <span className="ml-auto opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">
+                          <ExternalLink size={16} />
+                        </span>
+                      </a>
+                    </div>
                   </div>
-                </form>
+                  
+                  {/* Direct Contact */}
+                  <div className="bg-gray-800/50 p-6 rounded-xl border border-purple-500/10 hover:border-purple-500/30 transition-all duration-300 shadow-lg transform hover:-translate-y-1 hover:shadow-purple-500/20 animate-on-scroll" style={{animationDelay: '0.4s'}}>
+                    <h4 className="text-purple-400 font-semibold mb-6 flex items-center">
+                      <span className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center mr-3">
+                        <Mail size={18} className="text-purple-400" />
+                      </span>
+                      Get in touch
+                    </h4>
+                    
+                    <div className="space-y-5">
+                      <a href="mailto:eakpun@gmail.com" className="flex items-center text-gray-300 hover:text-purple-400 transition-all duration-300 group p-3 rounded-lg hover:bg-purple-500/10">
+                        <span className="mr-4 p-2 bg-gray-800 rounded-full group-hover:bg-purple-500/20 transition-colors duration-300">
+                          <Mail size={20} className="group-hover:scale-110 transition-transform duration-300" />
+                        </span>
+                        <div className="flex flex-col">
+                          <span className="font-medium">Email</span>
+                          <span className="text-sm text-gray-400 group-hover:text-purple-300">eakpun@gmail.com</span>
+                        </div>
+                        <span className="ml-auto opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">
+                          <ExternalLink size={16} />
+                        </span>
+                      </a>
+                      
+                      <div className="p-5 bg-gradient-to-br from-purple-900/30 to-indigo-900/30 rounded-lg border border-purple-500/10 mt-6">
+                        <p className="text-gray-300 mb-4">
+                          Looking for a mentor? I offer free 30-minute consultation sessions to discuss your project or career goals.
+                        </p>
+                        <a 
+                          href="https://adplist.org/mentors/eak-zangkaew" 
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-md transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 group"
+                        >
+                          <span>Schedule a session</span>
+                          <ExternalLink size={16} className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Response Time Indicator */}
+                <div className="mt-12 text-center animate-on-scroll" style={{animationDelay: '0.6s'}}>
+                  <div className="inline-flex items-center bg-gray-800/70 px-6 py-3 rounded-full">
+                    <div className="w-3 h-3 bg-green-500 rounded-full mr-3 animate-pulse"></div>
+                    <span className="text-gray-300">Typically responds within 24 hours</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
