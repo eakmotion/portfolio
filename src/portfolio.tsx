@@ -31,7 +31,7 @@ const Portfolio = () => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
       
-      const sections = ['home', 'aboutme', 'projects', 'contact'];
+      const sections = ['home', 'aboutme', 'experience', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
       
       for (const section of sections) {
@@ -262,7 +262,7 @@ const Portfolio = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
-              {['Home', 'About Me', 'Projects', 'Contact'].map((item, index) => {
+              {['Home', 'About Me', 'Experience', 'Projects', 'Contact'].map((item, index) => {
                 const sectionId = item.toLowerCase().replace(/\s+/g, '');
                 return (
                   <li key={index} style={{
@@ -302,7 +302,7 @@ const Portfolio = () => {
           <div className="md:hidden bg-gray-800 border-b border-purple-500/20">
             <nav className="px-4 py-4">
               <ul className="space-y-4">
-                {['Home', 'About Me', 'Projects', 'Contact'].map((item, index) => {
+                {['Home', 'About Me', 'Experience', 'Projects', 'Contact'].map((item, index) => {
                   const sectionId = item.toLowerCase().replace(/\s+/g, '');
                   return (
                     <li key={index}>
@@ -357,7 +357,7 @@ const Portfolio = () => {
                 animation: isLoaded ? 'fadeInUp 0.8s 0.4s forwards' : 'none'
               }}>
                 <h2 className="text-xl md:text-2xl text-gray-300 mb-6">
-                  A dedicated Full-Stack with over 10 years of experience in developing 
+                  A dedicated Full-Stack with over 15 years of experience in developing 
                   scalable and robust frontend and backend systems.
                 </h2>
               </div>
@@ -533,38 +533,42 @@ const Portfolio = () => {
             
             <div className="relative">
               <div className="animate-on-scroll">
+                <h3 className="text-2xl font-bold mb-4 text-purple-300">Eak Zangkkaew – Senior Full-Stack Software Engineer</h3>
                 <p className="text-lg mb-6">
-                  Over the past 10+ years, I've had the opportunity to work at some of the most 
-                  innovative companies in the tech industry including finance, sports, and e-commerce.
+                  With over 15 years of experience in designing and developing scalable, high-performance software solutions, 
+                  I blend deep technical expertise with a keen eye for user experience. I specialize in full-stack development—from 
+                  crafting intuitive, responsive front-end interfaces using modern frameworks (React, React Native, etc.) to 
+                  architecting robust back-end systems with Node.js, Ruby on Rails, and cloud-native technologies. My passion 
+                  lies in transforming complex challenges into elegant, user-centered products.
                 </p>
                 <p className="text-lg mb-6 text-purple-300 relative pl-6 border-l-2 border-purple-500">
-                  I am a passionate and results-driven backend engineer in developing high-performance 
-                  backend solutions. I specialize in Node.js and Ruby on Rails, with a proven track 
-                  record of delivering secure and scalable applications.
+                  I am a passionate and results-driven engineer focused on developing high-performance 
+                  solutions across the entire technology stack. I specialize in Node.js, Ruby on Rails, and modern 
+                  front-end frameworks, with a proven track record of delivering secure and scalable applications.
                 </p>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
                 {[
                   {
-                    icon: <Server size={24} />,
-                    title: "Backend Development",
-                    description: "Expert in developing scalable backend systems with Node.js and Ruby on Rails. Specialized in RESTful APIs, microservices architecture, and database optimization."
-                  },
-                  {
                     icon: <Code size={24} />,
-                    title: "Technical Skills",
-                    description: "Proficient in Node.js, TypeScript, Ruby, and Ruby on Rails. Experienced with SQL and NoSQL databases, Redis, and modern DevOps practices."
+                    title: "Full-Stack Development",
+                    description: "Expertise in building end-to-end solutions using Node.js, Ruby on Rails, TypeScript, and modern JavaScript frameworks."
                   },
                   {
                     icon: <Globe size={24} />,
-                    title: "Industry Experience",
-                    description: "Worked across finance, e-commerce, and sports tech industries, developing solutions that meet specific domain requirements and regulations."
+                    title: "Front-End & UX Design",
+                    description: "Skilled in React, React Native, and responsive design principles that prioritize accessibility, usability, and performance."
+                  },
+                  {
+                    icon: <Server size={24} />,
+                    title: "Cloud & DevOps",
+                    description: "Proficient with AWS, Docker, Kubernetes, and CI/CD pipelines to deliver scalable, secure, and efficient deployments."
                   },
                   {
                     icon: <Shield size={24} />,
-                    title: "Security & Compliance",
-                    description: "Strong focus on implementing robust security measures and ensuring compliance with financial regulations and industry standards."
+                    title: "AI & Data Integration",
+                    description: "Experience integrating generative AI (FinChat.io) to enhance product capabilities and streamline data-driven decision making."
                   }
                 ].map((skill, index) => (
                   <div 
@@ -594,10 +598,10 @@ const Portfolio = () => {
               {/* Animated counter stats */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 animate-on-scroll">
                 {[
-                  { number: "10+", label: "Years Experience" },
+                  { number: "15+", label: "Years Experience" },
                   { number: "20+", label: "Projects Completed" },
                   { number: "3", label: "Industries" },
-                  { number: "2", label: "Tech Specialties" }
+                  { number: "5+", label: "Tech Specialties" }
                 ].map((stat, index) => (
                   <div key={index} className="text-center p-4 relative">
                     <div className="absolute inset-0 bg-purple-900/5 rounded-lg transform rotate-3"></div>
@@ -607,6 +611,144 @@ const Portfolio = () => {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Professional Experience Section */}
+      <section id="experience" className="py-20 relative">
+        {/* Background animation elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-20 left-[15%] w-72 h-72 rounded-full bg-gradient-to-r from-purple-900 to-indigo-900 opacity-5" 
+               style={{animation: 'float 18s ease-in-out infinite'}}></div>
+          <div className="absolute top-[60%] right-[10%] w-48 h-48 rounded-full bg-gradient-to-r from-blue-900 to-cyan-900 opacity-5" 
+               style={{animation: 'float 15s ease-in-out infinite 2s'}}></div>
+        </div>
+      
+        <div className="max-w-6xl mx-auto px-4 relative z-10">
+          <div className="mb-16 text-center animate-on-scroll">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 inline-block relative">
+              Professional Experience
+              <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-indigo-500" 
+                style={{
+                  transform: 'scaleX(0)',
+                  transformOrigin: 'left',
+                  transition: 'transform 0.6s ease',
+                  animation: 'slideInRight 0.8s 0.3s forwards'
+                }}></span>
+            </h2>
+            <div className="w-20 h-1 bg-purple-500 mx-auto mt-4" style={{
+              transform: 'scaleX(0)',
+              transformOrigin: 'center',
+              animation: 'slideInRight 0.6s 0.5s forwards'
+            }}></div>
+          </div>
+
+          {/* Experience Cards */}
+          <div className="space-y-12">
+            {/* Mogo Experience */}
+            <div className="animate-on-scroll bg-gray-800 rounded-xl overflow-hidden shadow-xl relative">
+              <div className="h-2 bg-gradient-to-r from-purple-600 to-indigo-600 relative overflow-hidden">
+                <div className="absolute inset-0 bg-white opacity-30" style={{
+                  transform: 'translateX(-100%)',
+                  animation: 'shine 3s infinite 1s'
+                }}></div>
+              </div>
+              
+              <div className="p-8">
+                <h3 className="text-2xl font-bold mb-3 text-purple-300">
+                  Mogo – Transforming Financial Services
+                </h3>
+                <h4 className="text-xl text-gray-300 mb-4">Senior Software Engineer</h4>
+                
+                <p className="text-gray-300 mb-6">
+                  At Mogo, I lead the development of mission-critical applications spanning trading, lending, and investment platforms. 
+                  I've driven projects that integrate advanced AI for institutional research, enhanced system efficiency through cloud 
+                  and DevOps best practices, and championed UX improvements to ensure a seamless user journey.
+                </p>
+                
+                <div className="mb-6">
+                  <h5 className="text-purple-400 font-semibold mb-3">Key Contributions:</h5>
+                  <ul className="space-y-2">
+                    <li className="flex items-start text-gray-300">
+                      <span className="text-purple-500 mr-2 mt-1">•</span>
+                      <span><strong>MogoTrade & Moka Platforms:</strong> Architecting and scaling full-stack solutions with Node.js, Ruby, TypeScript, and AWS.</span>
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                      <span className="text-purple-500 mr-2 mt-1">•</span>
+                      <span><strong>AI Integration:</strong> Leading the integration of FinChat's generative AI to streamline financial analysis and decision-making.</span>
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                      <span className="text-purple-500 mr-2 mt-1">•</span>
+                      <span><strong>DevOps and Cloud Optimization:</strong> Enhancing CI/CD pipelines, infrastructure automation, and maintaining high uptime with robust security standards.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            {/* SBLive & FlashFunders Experience */}
+            <div className="animate-on-scroll bg-gray-800 rounded-xl overflow-hidden shadow-xl relative">
+              <div className="h-2 bg-gradient-to-r from-blue-600 to-green-600 relative overflow-hidden">
+                <div className="absolute inset-0 bg-white opacity-30" style={{
+                  transform: 'translateX(-100%)',
+                  animation: 'shine 3s infinite 1s'
+                }}></div>
+              </div>
+              
+              <div className="p-8">
+                <h3 className="text-2xl font-bold mb-3 text-purple-300">
+                  SBLive Sports & FlashFunders
+                </h3>
+                <h4 className="text-xl text-gray-300 mb-4">Senior Software Engineer</h4>
+                
+                <p className="text-gray-300 mb-6">
+                  As a Senior Software Engineer, I built scalable systems and designed microservices architectures to support millions of users. 
+                  My contributions included migrating legacy systems, optimizing backend services, and ensuring seamless integration of regulatory 
+                  and compliance requirements.
+                </p>
+              </div>
+            </div>
+            
+            {/* Mentorship & Leadership */}
+            <div className="animate-on-scroll bg-gray-800 rounded-xl overflow-hidden shadow-xl relative">
+              <div className="h-2 bg-gradient-to-r from-green-600 to-teal-600 relative overflow-hidden">
+                <div className="absolute inset-0 bg-white opacity-30" style={{
+                  transform: 'translateX(-100%)',
+                  animation: 'shine 3s infinite 1s'
+                }}></div>
+              </div>
+              
+              <div className="p-8">
+                <h3 className="text-2xl font-bold mb-3 text-purple-300">
+                  Mentorship & Community Engagement
+                </h3>
+                
+                <p className="text-gray-300 mb-6">
+                  Beyond technical development, I have mentored budding engineers through my role at Lighthouse Labs. 
+                  I helped students navigate the full-stack development lifecycle—from front-end design to back-end logic—instilling 
+                  best practices in UX, TDD, and agile methodologies.
+                </p>
+                
+                <div className="mb-4">
+                  <h5 className="text-purple-400 font-semibold mb-3">As a mentor, I provided:</h5>
+                  <ul className="space-y-2">
+                    <li className="flex items-start text-gray-300">
+                      <span className="text-purple-500 mr-2 mt-1">•</span>
+                      <span>Personalized guidance on coding challenges and project work.</span>
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                      <span className="text-purple-500 mr-2 mt-1">•</span>
+                      <span>Code reviews, best practices training, and curriculum enhancements.</span>
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                      <span className="text-purple-500 mr-2 mt-1">•</span>
+                      <span>Support for students to build a strong foundation in both front-end and back-end development.</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -803,7 +945,7 @@ const Portfolio = () => {
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="mb-16 text-center animate-on-scroll">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 inline-block relative">
-              Let's connect
+              Let's Connect
               <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-indigo-500" 
                 style={{
                   transform: 'scaleX(0)',
@@ -818,8 +960,8 @@ const Portfolio = () => {
               animation: 'slideInRight 0.6s 0.5s forwards'
             }}></div>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto animate-on-scroll">
-              I'm <span className="text-purple-400 text-glow">focused on being the best</span>. I am always 
-              open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+              Whether you're looking for innovative software solutions, expert guidance on full-stack development, 
+              or a mentor to help you navigate the evolving tech landscape, I'd love to connect.
             </p>
           </div>
 
@@ -855,13 +997,13 @@ const Portfolio = () => {
                 <div className="animate-on-scroll" style={{animationDelay: '0.4s'}}>
                   <h4 className="text-purple-400 font-semibold mb-4">Get in touch</h4>
                   <a 
-                    href="mailto:eakzang@gmail.com" 
+                    href="mailto:eakpun@gmail.com" 
                     className="flex items-center text-gray-300 hover:text-purple-400 transition-all duration-300 group"
                   >
                     <span className="mr-3 p-2 bg-gray-800 rounded-full group-hover:bg-purple-500/20 transition-colors duration-300">
                       <Mail size={16} className="group-hover:scale-110 transition-transform duration-300" />
                     </span>
-                    <span>eakzang@gmail.com</span>
+                    <span>eakpun@gmail.com</span>
                     <span className="ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">→</span>
                   </a>
                 </div>
@@ -947,7 +1089,7 @@ const Portfolio = () => {
       {/* Footer */}
       <footer className="py-8 bg-gray-900 border-t border-gray-800">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <p className="text-gray-500">© Eak Zang 2025. All rights reserved.</p>
+          <p className="text-gray-500">© Eak Zang 2024. All rights reserved.</p>
           
           {/* Scroll to top button */}
           <a 
