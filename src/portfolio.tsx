@@ -345,8 +345,8 @@ const Portfolio = () => {
                 animation: isLoaded ? 'fadeInUp 0.8s 0.4s forwards' : 'none'
               }}>
                 <h2 className="text-xl md:text-2xl text-gray-300 mb-6">
-                  A dedicated backend engineer with over 10 years of experience in developing 
-                  scalable and robust backend systems.
+                  A dedicated Full-Stack with over 10 years of experience in developing 
+                  scalable and robust frontend and backend systems.
                 </h2>
               </div>
               
