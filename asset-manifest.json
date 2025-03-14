@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.90b3ce08.css",
-    "main.js": "/static/js/main.63f2ac49.js",
+    "main.js": "/static/js/main.dc9dcacd.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/screenshot-flashfunders.png": "/static/media/screenshot-flashfunders.1e73f4974e460d1db73c.png",
     "static/media/screenshot-mogo-trade.png": "/static/media/screenshot-mogo-trade.de45e4bf4c4340b7c5b5.png",
@@ -17,11 +17,11 @@
     "static/media/logo-sblive.svg": "/static/media/logo-sblive.e9bc9c6a2c738332691d9b5d756fc1ed.svg",
     "index.html": "/index.html",
     "main.90b3ce08.css.map": "/static/css/main.90b3ce08.css.map",
-    "main.63f2ac49.js.map": "/static/js/main.63f2ac49.js.map",
+    "main.dc9dcacd.js.map": "/static/js/main.dc9dcacd.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90b3ce08.css",
-    "static/js/main.63f2ac49.js"
+    "static/js/main.dc9dcacd.js"
   ]
 }
