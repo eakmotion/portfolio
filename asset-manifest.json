@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.90b3ce08.css",
-    "main.js": "/static/js/main.dc9dcacd.js",
+    "main.css": "/static/css/main.992e5d6b.css",
+    "main.js": "/static/js/main.94292200.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/screenshot-flashfunders.png": "/static/media/screenshot-flashfunders.1e73f4974e460d1db73c.png",
+    "static/media/screenshot-scribd.png": "/static/media/screenshot-scribd.77cf1138629edad4337b.png",
     "static/media/screenshot-mogo-trade.png": "/static/media/screenshot-mogo-trade.de45e4bf4c4340b7c5b5.png",
     "static/media/screenshot-sblive.png": "/static/media/screenshot-sblive.7f46bad0cdabe8e12b90.png",
     "static/media/screenshot-mogo-money.png": "/static/media/screenshot-mogo-money.4e0f77cf300d763c61fc.png",
@@ -14,14 +15,15 @@
     "static/media/logo-moka.png": "/static/media/logo-moka.1b11dedd1511c14b7e8a.png",
     "static/media/logo-mogo.png": "/static/media/logo-mogo.32f46ee73beb5b6379d0.png",
     "static/media/logo-oozou.png": "/static/media/logo-oozou.fcf77a9040f6ab69a473.png",
+    "static/media/logo-scribd.svg": "/static/media/logo-scribd.cee96d757e5ee259b3c9a0b2824ce0d7.svg",
     "static/media/logo-sblive.svg": "/static/media/logo-sblive.e9bc9c6a2c738332691d9b5d756fc1ed.svg",
     "index.html": "/index.html",
-    "main.90b3ce08.css.map": "/static/css/main.90b3ce08.css.map",
-    "main.dc9dcacd.js.map": "/static/js/main.dc9dcacd.js.map",
+    "main.992e5d6b.css.map": "/static/css/main.992e5d6b.css.map",
+    "main.94292200.js.map": "/static/js/main.94292200.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90b3ce08.css",
-    "static/js/main.dc9dcacd.js"
+    "static/css/main.992e5d6b.css",
+    "static/js/main.94292200.js"
   ]
 }
